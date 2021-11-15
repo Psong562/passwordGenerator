@@ -42,7 +42,7 @@ const generatePassword = () => {
       generatePassword();
     }
   }
-  // Depending on choices creates password
+  // Depending on choices, creates password and shuffles randomly
   let pwd = ""
   for (let i = 0; i < passwordLength; i++) {
     pwd += confirmChoices.charAt(Math.floor(Math.random() * confirmChoices.length))
