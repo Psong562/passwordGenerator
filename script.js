@@ -9,11 +9,8 @@ const symbol = "!@#$%^&*()-_=+[]{};:',./<>?";
 
 let confirmChoices = "";
 
-
-
-
 // determine password length and choices 
-function generatePassword() {
+const generatePassword = () => {
   console.log(`button was clicked`)
   let passwordLength = prompt("Choose the lenght of your password(must be 8-128 characters).");
   if (passwordLength < 8 || passwordLength > 128 || isNaN(parseInt(passwordLength))) {
@@ -57,7 +54,7 @@ function generatePassword() {
 
 }
 // function to write password and enter in text box
-function writePassword() {
+const writePassword = () => {
   let password = generatePassword();
   let passwordText = document.querySelector(`#password`);
   passwordText.value = password;
