@@ -1,7 +1,4 @@
-
-let generateBtn = document.querySelector(`#generate`);
-
-// Setting Constants in arrays
+// Password choices
 const lower = "abcdefghijklmopqrstuvwxyz";
 const upper = "ABCDEFGHIJKLMOPQRSTUVWXYZ";
 const number = "1234567890";
@@ -61,4 +58,5 @@ const writePassword = () => {
 }
 
 // On click generates password
+let generateBtn = document.querySelector(`#generate`);
 generateBtn.addEventListener(`click`, writePassword);
